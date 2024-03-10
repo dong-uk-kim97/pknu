@@ -1,14 +1,15 @@
 # 부경대학교 AI 개발자 과정 (20240129-20240725)
 
 ## 배운 내용
-python basic
 
-folium
+#### python basic
 
-socket & ftp
+#### folium
 
-pandas
+#### socket & ftp
 
-sqlite3
+#### pandas
 
-PyQt5
+#### sqlite3
+
+#### PyQt5
