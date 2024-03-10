@@ -2,8 +2,13 @@
 
 ## 배운 내용
 python basic
+
 folium
+
 socket & ftp
+
 pandas
+
 sqlite3
+
 PyQt5
