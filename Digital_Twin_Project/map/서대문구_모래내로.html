@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4c75477dbb667df6e7c237ce28a59d2d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-textpath@1.2.3/leaflet.textpath.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4c75477dbb667df6e7c237ce28a59d2d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4c75477dbb667df6e7c237ce28a59d2d = L.map(
+                "map_4c75477dbb667df6e7c237ce28a59d2d",
+                {
+                    center: [37.586208, 126.946906],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ddf6c69e435485e93aece4a2a7ab6bbf = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_ddf6c69e435485e93aece4a2a7ab6bbf.addTo(map_4c75477dbb667df6e7c237ce28a59d2d);
+        
+    
+            var poly_line_cb29b5ae901d0c4c1a3394d526623943 = L.polyline(
+                [[37.581242, 126.936161], [37.581247, 126.936166], [37.581844, 126.93615], [37.584004, 126.939503], [37.584408, 126.943713], [37.584941, 126.944324], [37.586208, 126.946906]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_4c75477dbb667df6e7c237ce28a59d2d);
+        
+    
+            poly_line_cb29b5ae901d0c4c1a3394d526623943.bindTooltip(
+                `<div>
+                     polyline
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c39620ed89ac4a7a8559e659bb824d3c = L.marker(
+                [37.575106, 126.957493],
+                {}
+            ).addTo(map_4c75477dbb667df6e7c237ce28a59d2d);
+        
+    
+            var icon_1e29f12a81575c5597b88322e57c6684 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c39620ed89ac4a7a8559e659bb824d3c.setIcon(icon_1e29f12a81575c5597b88322e57c6684);
+        
+    
+        var popup_8806f00c976830c00f6ba512311a98af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc1d41b3088d5c5d7e30f92eda1e3a7a = $(`<div id="html_cc1d41b3088d5c5d7e30f92eda1e3a7a" style="width: 100.0%; height: 100.0%;"><pre>세란병원</pre></div>`)[0];
+                popup_8806f00c976830c00f6ba512311a98af.setContent(html_cc1d41b3088d5c5d7e30f92eda1e3a7a);
+            
+        
+
+        marker_c39620ed89ac4a7a8559e659bb824d3c.bindPopup(popup_8806f00c976830c00f6ba512311a98af)
+        ;
+
+        
+    
+    
+            var marker_2d5c42d3cc61f438f93d05a94dc9504f = L.marker(
+                [37.581242, 126.936161],
+                {}
+            ).addTo(map_4c75477dbb667df6e7c237ce28a59d2d);
+        
+    
+            var icon_673183c4625a6dd6348e1e71bc054da9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2d5c42d3cc61f438f93d05a94dc9504f.setIcon(icon_673183c4625a6dd6348e1e71bc054da9);
+        
+    
+        var popup_89c9f096ea3359791756c635a3ea5697 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18d4e21e6b8e5d943475f1be187c4bc4 = $(`<div id="html_18d4e21e6b8e5d943475f1be187c4bc4" style="width: 100.0%; height: 100.0%;"><pre>의료법인동신의료재단동신병원</pre></div>`)[0];
+                popup_89c9f096ea3359791756c635a3ea5697.setContent(html_18d4e21e6b8e5d943475f1be187c4bc4);
+            
+        
+
+        marker_2d5c42d3cc61f438f93d05a94dc9504f.bindPopup(popup_89c9f096ea3359791756c635a3ea5697)
+        ;
+
+        
+    
+    
+            var circle_marker_dcd576edda6ebe323e6a4ef3d35476aa = L.circleMarker(
+                [37.586208, 126.946906],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": "red", "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_4c75477dbb667df6e7c237ce28a59d2d);
+        
+    
+            poly_line_cb29b5ae901d0c4c1a3394d526623943.setText(
+                "                   \ubaa8\ub798\ub0b4\ub85c -\u003e \ub3d9\uc2e0\ubcd1\uc6d0",
+                {"attributes": {"fill": "black", "font-size": "15", "font-weight": "bold"}, "below": false, "center": false, "offset": 0, "orientation": 0, "repeat": false}
+            );
+        
+</script>
+</html>

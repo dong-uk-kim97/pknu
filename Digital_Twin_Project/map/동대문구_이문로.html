@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7f84cc65d477764bb26bcd3af52ae64b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-textpath@1.2.3/leaflet.textpath.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7f84cc65d477764bb26bcd3af52ae64b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7f84cc65d477764bb26bcd3af52ae64b = L.map(
+                "map_7f84cc65d477764bb26bcd3af52ae64b",
+                {
+                    center: [37.590059, 127.055832],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c3885d2ea63f6f603a1aea277a84b0c4 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_c3885d2ea63f6f603a1aea277a84b0c4.addTo(map_7f84cc65d477764bb26bcd3af52ae64b);
+        
+    
+            var poly_line_c8c415bd9f84592491ae6c447ce141ca = L.polyline(
+                [[37.584294, 127.050071], [37.58836, 127.053747], [37.590059, 127.055832]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_7f84cc65d477764bb26bcd3af52ae64b);
+        
+    
+            poly_line_c8c415bd9f84592491ae6c447ce141ca.bindTooltip(
+                `<div>
+                     polyline
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8bf467bde3c02d82785dd1e4044ccfb3 = L.marker(
+                [37.587428, 127.065092],
+                {}
+            ).addTo(map_7f84cc65d477764bb26bcd3af52ae64b);
+        
+    
+            var icon_a9855367cfa6c44b01f611447b6eee0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8bf467bde3c02d82785dd1e4044ccfb3.setIcon(icon_a9855367cfa6c44b01f611447b6eee0d);
+        
+    
+        var popup_71e86a2f64c0be8638698a6cdbe06bbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6b6236f94309381e156a1702281601f = $(`<div id="html_b6b6236f94309381e156a1702281601f" style="width: 100.0%; height: 100.0%;"><pre>삼육 서울 병원</pre></div>`)[0];
+                popup_71e86a2f64c0be8638698a6cdbe06bbc.setContent(html_b6b6236f94309381e156a1702281601f);
+            
+        
+
+        marker_8bf467bde3c02d82785dd1e4044ccfb3.bindPopup(popup_71e86a2f64c0be8638698a6cdbe06bbc)
+        ;
+
+        
+    
+    
+            var marker_b507e6f432a248a9c930d33dd4e40221 = L.marker(
+                [37.593417, 127.051273],
+                {}
+            ).addTo(map_7f84cc65d477764bb26bcd3af52ae64b);
+        
+    
+            var icon_b814169a8244e9ad1338b47a287174bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b507e6f432a248a9c930d33dd4e40221.setIcon(icon_b814169a8244e9ad1338b47a287174bf);
+        
+    
+        var popup_36ec1dfcfeb654cad81eb846f299a7a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3658f69b2ad9eaa45d1d0d03689a5481 = $(`<div id="html_3658f69b2ad9eaa45d1d0d03689a5481" style="width: 100.0%; height: 100.0%;"><pre>경희 대학교 병원</pre></div>`)[0];
+                popup_36ec1dfcfeb654cad81eb846f299a7a0.setContent(html_3658f69b2ad9eaa45d1d0d03689a5481);
+            
+        
+
+        marker_b507e6f432a248a9c930d33dd4e40221.bindPopup(popup_36ec1dfcfeb654cad81eb846f299a7a0)
+        ;
+
+        
+    
+    
+            var marker_3685c7d1e2a1adc395ad817482616e22 = L.marker(
+                [37.584294, 127.050071],
+                {}
+            ).addTo(map_7f84cc65d477764bb26bcd3af52ae64b);
+        
+    
+            var icon_06948de375d6e6e36a12cecfe268f0cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3685c7d1e2a1adc395ad817482616e22.setIcon(icon_06948de375d6e6e36a12cecfe268f0cc);
+        
+    
+        var popup_6fec1d4d887bd125e3aa1b150e93e460 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c3bde0c05263d397cdf26faa6db9664 = $(`<div id="html_0c3bde0c05263d397cdf26faa6db9664" style="width: 100.0%; height: 100.0%;"><pre>서울 성심 병원</pre></div>`)[0];
+                popup_6fec1d4d887bd125e3aa1b150e93e460.setContent(html_0c3bde0c05263d397cdf26faa6db9664);
+            
+        
+
+        marker_3685c7d1e2a1adc395ad817482616e22.bindPopup(popup_6fec1d4d887bd125e3aa1b150e93e460)
+        ;
+
+        
+    
+    
+            var circle_marker_90bae56890386448a45d6761040044d6 = L.circleMarker(
+                [37.590059, 127.055832],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": "red", "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_7f84cc65d477764bb26bcd3af52ae64b);
+        
+    
+            poly_line_c8c415bd9f84592491ae6c447ce141ca.setText(
+                "               \uc774\ubb38\ub85c -\u003e \uc11c\uc6b8\uc131\uc2ec\ubcd1\uc6d0",
+                {"attributes": {"fill": "black", "font-size": "15", "font-weight": "bold"}, "below": false, "center": false, "offset": 0, "orientation": 0, "repeat": false}
+            );
+        
+</script>
+</html>

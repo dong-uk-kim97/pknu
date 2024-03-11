@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d2bbfce77eced41af66bcd3cd2f83f8d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-textpath@1.2.3/leaflet.textpath.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d2bbfce77eced41af66bcd3cd2f83f8d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d2bbfce77eced41af66bcd3cd2f83f8d = L.map(
+                "map_d2bbfce77eced41af66bcd3cd2f83f8d",
+                {
+                    center: [37.590059, 127.055832],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_39fbd76c49d51836c846865ae940df0e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_39fbd76c49d51836c846865ae940df0e.addTo(map_d2bbfce77eced41af66bcd3cd2f83f8d);
+        
+    
+            var poly_line_66e0c0bb2d0316207f89d2b6fc4a1e87 = L.polyline(
+                [[37.590059, 127.055832], [37.588262, 127.053798], [37.587833, 127.054998], [37.589599, 127.060393], [37.590064, 127.062378], [37.587097, 127.063758], [37.587428, 127.065092]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_d2bbfce77eced41af66bcd3cd2f83f8d);
+        
+    
+            poly_line_66e0c0bb2d0316207f89d2b6fc4a1e87.bindTooltip(
+                `<div>
+                     polyline
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_395f5254605ed289ae1885e04fff6ae4 = L.polyline(
+                [[37.593417, 127.051273], [37.59326, 127.052647], [37.59162, 127.052263], [37.590059, 127.055832]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_d2bbfce77eced41af66bcd3cd2f83f8d);
+        
+    
+            poly_line_395f5254605ed289ae1885e04fff6ae4.bindTooltip(
+                `<div>
+                     polyline
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_51e39e54a2dcad286fd06fa735c2a248 = L.polyline(
+                [[37.584294, 127.050071], [37.58836, 127.053747], [37.590059, 127.055832]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_d2bbfce77eced41af66bcd3cd2f83f8d);
+        
+    
+            poly_line_51e39e54a2dcad286fd06fa735c2a248.bindTooltip(
+                `<div>
+                     polyline
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb4dddb513b70f293b412725f3a905a4 = L.marker(
+                [37.587428, 127.065092],
+                {}
+            ).addTo(map_d2bbfce77eced41af66bcd3cd2f83f8d);
+        
+    
+            var icon_48b0653b9b3f582e663e17272a4e9770 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bb4dddb513b70f293b412725f3a905a4.setIcon(icon_48b0653b9b3f582e663e17272a4e9770);
+        
+    
+        var popup_d6748434661162bc4238272eb8db3386 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a41c4a70c563600bbe72e2cac264bbc = $(`<div id="html_2a41c4a70c563600bbe72e2cac264bbc" style="width: 100.0%; height: 100.0%;"><pre>삼육 서울 병원</pre></div>`)[0];
+                popup_d6748434661162bc4238272eb8db3386.setContent(html_2a41c4a70c563600bbe72e2cac264bbc);
+            
+        
+
+        marker_bb4dddb513b70f293b412725f3a905a4.bindPopup(popup_d6748434661162bc4238272eb8db3386)
+        ;
+
+        
+    
+    
+            var marker_09bb0cd4bf097eb8f2cdfc32f0153f68 = L.marker(
+                [37.593417, 127.051273],
+                {}
+            ).addTo(map_d2bbfce77eced41af66bcd3cd2f83f8d);
+        
+    
+            var icon_f886da3d1281412cb8e8ca634bb0810b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09bb0cd4bf097eb8f2cdfc32f0153f68.setIcon(icon_f886da3d1281412cb8e8ca634bb0810b);
+        
+    
+        var popup_93657241cac42566a7277c8fc23f1c3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25272fb5f95560573174d18c26c53c91 = $(`<div id="html_25272fb5f95560573174d18c26c53c91" style="width: 100.0%; height: 100.0%;"><pre>경희 대학교 병원</pre></div>`)[0];
+                popup_93657241cac42566a7277c8fc23f1c3e.setContent(html_25272fb5f95560573174d18c26c53c91);
+            
+        
+
+        marker_09bb0cd4bf097eb8f2cdfc32f0153f68.bindPopup(popup_93657241cac42566a7277c8fc23f1c3e)
+        ;
+
+        
+    
+    
+            var marker_bca89e88d27f899d793e22fb87c1c017 = L.marker(
+                [37.584294, 127.050071],
+                {}
+            ).addTo(map_d2bbfce77eced41af66bcd3cd2f83f8d);
+        
+    
+            var icon_668b686a1b957fb066461b7c4517e86d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bca89e88d27f899d793e22fb87c1c017.setIcon(icon_668b686a1b957fb066461b7c4517e86d);
+        
+    
+        var popup_b59890dbeff629aeb349209b651ac2de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61b442376755ea9f44d5ed2df08a336a = $(`<div id="html_61b442376755ea9f44d5ed2df08a336a" style="width: 100.0%; height: 100.0%;"><pre>서울 성심 병원</pre></div>`)[0];
+                popup_b59890dbeff629aeb349209b651ac2de.setContent(html_61b442376755ea9f44d5ed2df08a336a);
+            
+        
+
+        marker_bca89e88d27f899d793e22fb87c1c017.bindPopup(popup_b59890dbeff629aeb349209b651ac2de)
+        ;
+
+        
+    
+    
+            var circle_marker_f78fa5c27c4d3d81b5bd7c93b30c1ce7 = L.circleMarker(
+                [37.590059, 127.055832],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": "red", "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_d2bbfce77eced41af66bcd3cd2f83f8d);
+        
+    
+            poly_line_66e0c0bb2d0316207f89d2b6fc4a1e87.setText(
+                "                                                               \ub9dd\uc6b0\ub85c -\u003e \uc0bc\uc721\uc11c\uc6b8\ubcd1\uc6d0",
+                {"attributes": {"fill": "black", "font-size": "15", "font-weight": "bold"}, "below": false, "center": false, "offset": 0, "orientation": 0, "repeat": false}
+            );
+        
+    
+            poly_line_395f5254605ed289ae1885e04fff6ae4.setText(
+                "                                          \ud68c\uae30\ub85c -\u003e \uacbd\ud76c\ub300\ud559\uad50\ubcd1\uc6d0",
+                {"attributes": {"fill": "black", "font-size": "15", "font-weight": "bold"}, "below": false, "center": false, "offset": 0, "orientation": 0, "repeat": false}
+            );
+        
+    
+            poly_line_51e39e54a2dcad286fd06fa735c2a248.setText(
+                "               \uc774\ubb38\ub85c -\u003e \uc11c\uc6b8\uc131\uc2ec\ubcd1\uc6d0",
+                {"attributes": {"fill": "black", "font-size": "15", "font-weight": "bold"}, "below": false, "center": false, "offset": 0, "orientation": 0, "repeat": false}
+            );
+        
+</script>
+</html>

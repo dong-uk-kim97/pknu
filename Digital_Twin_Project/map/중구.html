@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fed21576787d27fbc22c8bf3915492e5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-textpath@1.2.3/leaflet.textpath.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fed21576787d27fbc22c8bf3915492e5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fed21576787d27fbc22c8bf3915492e5 = L.map(
+                "map_fed21576787d27fbc22c8bf3915492e5",
+                {
+                    center: [37.559111, 127.005753],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_84b7d394f7948bb5f069b78559b66135 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_84b7d394f7948bb5f069b78559b66135.addTo(map_fed21576787d27fbc22c8bf3915492e5);
+        
+    
+            var poly_line_b4d1ece6c443e243d0d06727e2091b67 = L.polyline(
+                [[37.559111, 127.005753], [37.55971, 127.005616], [37.565989, 127.00787], [37.566607, 127.004439], [37.568023, 127.005264], [37.567829, 127.006353], [37.567366, 127.006156], [37.567179, 127.005579]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_fed21576787d27fbc22c8bf3915492e5);
+        
+    
+            poly_line_b4d1ece6c443e243d0d06727e2091b67.bindTooltip(
+                `<div>
+                     polyline
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3eb511b30a47227373d60a6d0594577e = L.polyline(
+                [[37.559111, 127.005753], [37.559031, 127.003238], [37.55911, 127.003024], [37.55936, 127.0029], [37.566876, 127.002249], [37.5666, 127.004464], [37.56644, 127.00533], [37.566772, 127.005447], [37.566829, 127.005637], [37.566937, 127.005661], [37.566903, 127.005996], [37.567306, 127.00615], [37.567179, 127.005579]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_fed21576787d27fbc22c8bf3915492e5);
+        
+    
+            poly_line_3eb511b30a47227373d60a6d0594577e.bindTooltip(
+                `<div>
+                     polyline
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a16bc9d7a82b0921f857d71d836dfe9 = L.marker(
+                [37.567179, 127.005579],
+                {}
+            ).addTo(map_fed21576787d27fbc22c8bf3915492e5);
+        
+    
+            var icon_5540d992e96c7170d14b75175ca37b1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a16bc9d7a82b0921f857d71d836dfe9.setIcon(icon_5540d992e96c7170d14b75175ca37b1d);
+        
+    
+        var popup_c625cb5b8e2a336557cfb2d75781a1e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ea44af798e906d91f82a4c9b988b938 = $(`<div id="html_3ea44af798e906d91f82a4c9b988b938" style="width: 100.0%; height: 100.0%;"><pre>국립중앙의료원</pre></div>`)[0];
+                popup_c625cb5b8e2a336557cfb2d75781a1e2.setContent(html_3ea44af798e906d91f82a4c9b988b938);
+            
+        
+
+        marker_0a16bc9d7a82b0921f857d71d836dfe9.bindPopup(popup_c625cb5b8e2a336557cfb2d75781a1e2)
+        ;
+
+        
+    
+    
+            var marker_5d9b63141907928039a487f7b1e9ecae = L.marker(
+                [37.567179, 127.005579],
+                {}
+            ).addTo(map_fed21576787d27fbc22c8bf3915492e5);
+        
+    
+            var icon_b8a656285d6208a3a583675f8152d5b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5d9b63141907928039a487f7b1e9ecae.setIcon(icon_b8a656285d6208a3a583675f8152d5b0);
+        
+    
+        var popup_d1597a8173c7e3f419590e3d530cb6e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2812fedcbeedc8d6e874b74436b4651e = $(`<div id="html_2812fedcbeedc8d6e874b74436b4651e" style="width: 100.0%; height: 100.0%;"><pre>국립중앙의료원</pre></div>`)[0];
+                popup_d1597a8173c7e3f419590e3d530cb6e0.setContent(html_2812fedcbeedc8d6e874b74436b4651e);
+            
+        
+
+        marker_5d9b63141907928039a487f7b1e9ecae.bindPopup(popup_d1597a8173c7e3f419590e3d530cb6e0)
+        ;
+
+        
+    
+    
+            var circle_marker_c999c0ec77e5e8f9bd0b44ff817dff6e = L.circleMarker(
+                [37.559111, 127.005753],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": "red", "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_fed21576787d27fbc22c8bf3915492e5);
+        
+    
+            poly_line_b4d1ece6c443e243d0d06727e2091b67.setText(
+                "                         \uc7a5\ucd98\ub2e8\ub85c -\u003e \uad6d\ub9bd\uc911\uc559\uc758\ub8cc\uc6d0",
+                {"attributes": {"fill": "black", "font-size": "15", "font-weight": "bold"}, "below": false, "center": false, "offset": 0, "orientation": 0, "repeat": false}
+            );
+        
+    
+            poly_line_3eb511b30a47227373d60a6d0594577e.setText(
+                "                                                 \ub3d9\ud638\ub85c -\u003e \uad6d\ub9bd\uc911\uc559\uc758\ub8cc\uc6d0",
+                {"attributes": {"fill": "black", "font-size": "15", "font-weight": "bold"}, "below": false, "center": false, "offset": 0, "orientation": 0, "repeat": false}
+            );
+        
+</script>
+</html>

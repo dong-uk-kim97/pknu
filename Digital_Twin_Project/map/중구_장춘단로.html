@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_becc93741949c673636bc4fb4ddef1be {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-textpath@1.2.3/leaflet.textpath.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_becc93741949c673636bc4fb4ddef1be" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_becc93741949c673636bc4fb4ddef1be = L.map(
+                "map_becc93741949c673636bc4fb4ddef1be",
+                {
+                    center: [37.559111, 127.005753],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1a4c695478ced28a6e767b271ca69774 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_1a4c695478ced28a6e767b271ca69774.addTo(map_becc93741949c673636bc4fb4ddef1be);
+        
+    
+            var poly_line_10724eb11738e831638e44393c603e34 = L.polyline(
+                [[37.559111, 127.005753], [37.55971, 127.005616], [37.565989, 127.00787], [37.566607, 127.004439], [37.568023, 127.005264], [37.567829, 127.006353], [37.567366, 127.006156], [37.567179, 127.005579]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_becc93741949c673636bc4fb4ddef1be);
+        
+    
+            poly_line_10724eb11738e831638e44393c603e34.bindTooltip(
+                `<div>
+                     polyline
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_168895eaa589ac3e1b4d47792253cde3 = L.marker(
+                [37.567179, 127.005579],
+                {}
+            ).addTo(map_becc93741949c673636bc4fb4ddef1be);
+        
+    
+            var icon_830006df8a93efa7c2a7fe667c4c9b8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_168895eaa589ac3e1b4d47792253cde3.setIcon(icon_830006df8a93efa7c2a7fe667c4c9b8a);
+        
+    
+        var popup_4872a491cc2b0a7a56854c977ae055c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d34128215cddfe5d7c6d0c9e6e176b3f = $(`<div id="html_d34128215cddfe5d7c6d0c9e6e176b3f" style="width: 100.0%; height: 100.0%;"><pre>국립중앙의료원</pre></div>`)[0];
+                popup_4872a491cc2b0a7a56854c977ae055c1.setContent(html_d34128215cddfe5d7c6d0c9e6e176b3f);
+            
+        
+
+        marker_168895eaa589ac3e1b4d47792253cde3.bindPopup(popup_4872a491cc2b0a7a56854c977ae055c1)
+        ;
+
+        
+    
+    
+            var marker_b8488353e224e1744c3131aee2d25ef8 = L.marker(
+                [37.567179, 127.005579],
+                {}
+            ).addTo(map_becc93741949c673636bc4fb4ddef1be);
+        
+    
+            var icon_05cea0e6452a6c871c2fb34e7b04e1b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b8488353e224e1744c3131aee2d25ef8.setIcon(icon_05cea0e6452a6c871c2fb34e7b04e1b0);
+        
+    
+        var popup_dff2b2980b895733db9df906a26081a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bdc3370bdfc90d34040311747f61106 = $(`<div id="html_4bdc3370bdfc90d34040311747f61106" style="width: 100.0%; height: 100.0%;"><pre>국립중앙의료원</pre></div>`)[0];
+                popup_dff2b2980b895733db9df906a26081a9.setContent(html_4bdc3370bdfc90d34040311747f61106);
+            
+        
+
+        marker_b8488353e224e1744c3131aee2d25ef8.bindPopup(popup_dff2b2980b895733db9df906a26081a9)
+        ;
+
+        
+    
+    
+            var circle_marker_93069a3364be37794385f9b831a7f558 = L.circleMarker(
+                [37.559111, 127.005753],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": "red", "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_becc93741949c673636bc4fb4ddef1be);
+        
+    
+            poly_line_10724eb11738e831638e44393c603e34.setText(
+                "                         \uc7a5\ucd98\ub2e8\ub85c -\u003e \uad6d\ub9bd\uc911\uc559\uc758\ub8cc\uc6d0",
+                {"attributes": {"fill": "black", "font-size": "15", "font-weight": "bold"}, "below": false, "center": false, "offset": 0, "orientation": 0, "repeat": false}
+            );
+        
+</script>
+</html>
