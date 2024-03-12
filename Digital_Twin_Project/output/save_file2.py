@@ -161,7 +161,6 @@ class Thread3(QThread):
     def run(self):
         global save_path3
         try:          
-            os.makedirs(f'{save_path3}',exist_ok=True)
             cap = cv2.VideoCapture("rtsp://210.99.70.120:1935/live/cctv012.stream")
             if not cap.isOpened():
                 cap.release()
