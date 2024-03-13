@@ -39,3 +39,18 @@ for i in range(len(a)):
 a.pop(5)
 print(a)
 
+for i in range(len(a)):
+    if i==0:
+        a[i]=='a'
+    elif i==1:
+        a[i]='b'
+    elif i==2:
+        a[i]='c'
+    elif i==3:
+        a[i]='D'
+    elif i==4:
+        a[i]='E'
+    elif i==5:
+        a.pop(i)
+print(a)
+
