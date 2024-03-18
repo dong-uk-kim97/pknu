@@ -5,7 +5,6 @@
 #### python basic
 [파이썬](https://www.notion.so/df31cd6fcfae4e9baedcad86e2f227db?pvs=4)
 
-
 #### folium
 
 #### socket & ftp
