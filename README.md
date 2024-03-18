@@ -13,3 +13,5 @@
 #### sqlite3
 
 #### PyQt5
+
+#### MariaDB
