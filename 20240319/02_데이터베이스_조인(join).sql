@@ -95,6 +95,10 @@ ORDER BY mem_name Asc;
 	주문번호의 앞자리 8자리는 년원일을 의미
 구매금액 = 구매수량 * 판매가격
 */
+SELECT mem_name, SUM(nvl(prod_sale * cart_qty,0)) AS purchase_price
+FROM member, cart, prod
+WHERE mem_id=cart_member AND SUBSTRING(cart_no,1,8) BETWEEN '20050501' AND '20050531' AND cart_prod = prod_id
+GROUP BY mem_name;
 
 SELECT mem_name, SUM(prod_sale * cart_qty) AS purchase_price
 FROM member INNER JOIN cart ON(mem_id=cart_member
