@@ -11,18 +11,21 @@
 -- 일반 방식
 SELECT mem_id, mem_name, cart_qty, prod_name
 FROM member, cart, prod , buyer, lprod
-WHERE mem_id=cart_member AND cart_prod = prod_id AND prod_buyer= buyer_id and buyer_lgu =lprod_gu 
-and cart_qty>=5 AND substring(buyer_add1,1,2)IN('서울','대전','부산') AND lprod_nm LIKE '%전자%'
+WHERE mem_id=cart_member 
+	AND cart_prod = prod_id 
+	AND prod_buyer= buyer_id 
+	and buyer_lgu =lprod_gu 
+	and cart_qty>=5 
+	AND substring(buyer_add1,1,2)IN('서울','대전','부산') 
+	AND lprod_nm LIKE '%전자%'
 ORDER BY mem_id ASC, cart_qty DESC;
 
 -- 표준 방식
 SELECT mem_id, mem_name, cart_qty, prod_name
-FROM member INNER JOIN  cart ON(mem_id = cart_member
-										  and cart_qty>=5) 
-				INNER JOIN  prod ON(cart_prod = prod_id)
-				INNER JOIN  buyer ON (prod_buyer= buyer_id AND
-											substring(buyer_add1,1,2)IN('서울','대전','부산'))
-				INNER JOIN lprod ON(buyer_lgu =lprod_gu AND lprod_nm LIKE '%전자%' )
+FROM member INNER JOIN  cart ON(mem_id = cart_member and cart_qty>=5) 
+	    INNER JOIN  prod ON(cart_prod = prod_id)
+	    INNER JOIN  buyer ON (prod_buyer= buyer_id AND substring(buyer_add1,1,2)IN('서울','대전','부산'))
+	    INNER JOIN lprod ON(buyer_lgu =lprod_gu AND lprod_nm LIKE '%전자%' )
 ORDER BY mem_id ASC, cart_qty DESC;
 
 
