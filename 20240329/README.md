@@ -1,6 +1,6 @@
 # 데이터 수집 
 
-![국가 교통 데이터 오픈 마켓](https://www.bigdata-transportation.kr/frn/prdt/detail?prdtId=PRDTNUM_000000000135)
+![국가 교통 데이터 오픈 마켓](https://www.bigdata-transportation.kr)
 
 # 데이터 형태
 
