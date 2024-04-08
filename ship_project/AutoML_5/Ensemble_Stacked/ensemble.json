@@ -1,0 +1,40 @@
+{
+    "name": "Ensemble_Stacked",
+    "ml_task": "regression",
+    "optimize_metric": "mae",
+    "selected_models": [
+        {
+            "model": "21_LightGBM_Stacked",
+            "repeat": 2.0
+        },
+        {
+            "model": "51_CatBoost_GoldenFeatures_Stacked",
+            "repeat": 103.0
+        },
+        {
+            "model": "54_LightGBM_Stacked",
+            "repeat": 7.0
+        },
+        {
+            "model": "77_CatBoost",
+            "repeat": 25.0
+        },
+        {
+            "model": "79_LightGBM_Stacked",
+            "repeat": 5.0
+        },
+        {
+            "model": "82_LightGBM_Stacked",
+            "repeat": 5.0
+        },
+        {
+            "model": "Ensemble",
+            "repeat": 3.0
+        }
+    ],
+    "predictions_fname": "Ensemble_Stacked\\predictions_ensemble.csv",
+    "metric_name": "mae",
+    "final_loss": 45.36689105784121,
+    "train_time": 166.7785291671753,
+    "is_stacked": true
+}

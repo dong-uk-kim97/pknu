@@ -1,0 +1,77 @@
+{
+    "new_features": [
+        {
+            "feature1": "feature_4",
+            "feature2": "feature_17",
+            "operation": "ratio",
+            "score": 0.8414681213
+        },
+        {
+            "feature1": "feature_17",
+            "feature2": "feature_4",
+            "operation": "ratio",
+            "score": 0.8421885674
+        },
+        {
+            "feature1": "feature_13",
+            "feature2": "feature_4",
+            "operation": "ratio",
+            "score": 0.8462054693
+        },
+        {
+            "feature1": "feature_14",
+            "feature2": "feature_4",
+            "operation": "ratio",
+            "score": 0.8504145736
+        },
+        {
+            "feature1": "feature_14",
+            "feature2": "feature_4",
+            "operation": "multiply",
+            "score": 0.8514710502
+        },
+        {
+            "feature1": "feature_15",
+            "feature2": "feature_4",
+            "operation": "ratio",
+            "score": 0.8526479193
+        },
+        {
+            "feature1": "feature_4",
+            "feature2": "feature_9",
+            "operation": "diff",
+            "score": 0.8530332731
+        },
+        {
+            "feature1": "feature_8",
+            "feature2": "feature_4",
+            "operation": "multiply",
+            "score": 0.8531311078
+        },
+        {
+            "feature1": "feature_4",
+            "feature2": "feature_15",
+            "operation": "ratio",
+            "score": 0.8550080446
+        },
+        {
+            "feature1": "feature_4",
+            "feature2": "feature_13",
+            "operation": "ratio",
+            "score": 0.8559642473
+        }
+    ],
+    "new_columns": [
+        "feature_4_ratio_feature_17",
+        "feature_17_ratio_feature_4",
+        "feature_13_ratio_feature_4",
+        "feature_14_ratio_feature_4",
+        "feature_14_multiply_feature_4",
+        "feature_15_ratio_feature_4",
+        "feature_4_diff_feature_9",
+        "feature_8_multiply_feature_4",
+        "feature_4_ratio_feature_15",
+        "feature_4_ratio_feature_13"
+    ],
+    "ml_task": "regression"
+}
