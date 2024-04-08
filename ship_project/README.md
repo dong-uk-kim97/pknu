@@ -6,7 +6,9 @@
 저희 조는 접안 전에 선박이 해상에 정박하는 시간을 대기시간으로 정의하고, 선박의 제원 및 운항 정보를 활용하여 산출된 항차 데이터를 활용해 항만 內 선박의 대기 시간을 예측하는 AI 알고리즘을 개발하였습니다.
 
 # 데이터 수집
-HD 현대 AI Challenge   https://dacon.io/competitions/official/236158/overview/description
+HD 현대 AI Challenge
+
+https://dacon.io/competitions/official/236158/overview/description
 
 # 데이터 분석
 ![히트맵](heatmap.png)
