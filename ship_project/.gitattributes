@@ -1,4 +1,0 @@
-*.txt filter=lfs diff=lfs merge=lfs -text
-AutoML_7 filter=lfs diff=lfs merge=lfs -text
-AutoML_5 filter=lfs diff=lfs merge=lfs -text
-AutoML_9 filter=lfs diff=lfs merge=lfs -text
