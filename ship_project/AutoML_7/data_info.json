@@ -1,0 +1,59 @@
+{
+    "columns": [
+        "ARI_CO",
+        "SHIP_TYPE_CATEGORY",
+        "DIST",
+        "BREADTH",
+        "BUILT",
+        "DEADWEIGHT",
+        "DEPTH",
+        "DRAUGHT",
+        "GT",
+        "LENGTH",
+        "FLAG",
+        "U_WIND",
+        "AIR_TEMPERATURE",
+        "PORT_SIZE",
+        "year",
+        "weekday"
+    ],
+    "rows": 217108,
+    "cols": 16,
+    "target_is_numeric": true,
+    "columns_info": {
+        "ARI_CO": [],
+        "SHIP_TYPE_CATEGORY": [],
+        "DIST": [],
+        "BREADTH": [],
+        "BUILT": [],
+        "DEADWEIGHT": [],
+        "DEPTH": [
+            "scale"
+        ],
+        "DRAUGHT": [
+            "scale"
+        ],
+        "GT": [],
+        "LENGTH": [],
+        "FLAG": [
+            "scale"
+        ],
+        "U_WIND": [
+            "scale"
+        ],
+        "AIR_TEMPERATURE": [
+            "scale"
+        ],
+        "PORT_SIZE": [],
+        "year": [
+            "scale"
+        ],
+        "weekday": []
+    },
+    "target_info": [
+        "scale"
+    ],
+    "n_features": 16,
+    "is_sample_weighted": false,
+    "is_fairness_applied": false
+}

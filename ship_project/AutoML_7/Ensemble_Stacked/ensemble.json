@@ -1,0 +1,84 @@
+{
+    "name": "Ensemble_Stacked",
+    "ml_task": "regression",
+    "optimize_metric": "r2",
+    "selected_models": [
+        {
+            "model": "14_LightGBM_GoldenFeatures",
+            "repeat": 6.0
+        },
+        {
+            "model": "18_LightGBM",
+            "repeat": 4.0
+        },
+        {
+            "model": "20_LightGBM_Stacked",
+            "repeat": 4.0
+        },
+        {
+            "model": "24_CatBoost_Stacked",
+            "repeat": 12.0
+        },
+        {
+            "model": "30_CatBoost_Stacked",
+            "repeat": 16.0
+        },
+        {
+            "model": "43_LightGBM",
+            "repeat": 1.0
+        },
+        {
+            "model": "43_LightGBM_Stacked",
+            "repeat": 18.0
+        },
+        {
+            "model": "45_LightGBM_Stacked",
+            "repeat": 1.0
+        },
+        {
+            "model": "46_LightGBM",
+            "repeat": 1.0
+        },
+        {
+            "model": "52_Xgboost",
+            "repeat": 2.0
+        },
+        {
+            "model": "55_RandomForest_Stacked",
+            "repeat": 35.0
+        },
+        {
+            "model": "60_LightGBM",
+            "repeat": 1.0
+        },
+        {
+            "model": "61_Xgboost",
+            "repeat": 1.0
+        },
+        {
+            "model": "62_Xgboost_Stacked",
+            "repeat": 4.0
+        },
+        {
+            "model": "64_LightGBM",
+            "repeat": 3.0
+        },
+        {
+            "model": "74_RandomForest_Stacked",
+            "repeat": 11.0
+        },
+        {
+            "model": "7_Xgboost_GoldenFeatures",
+            "repeat": 1.0
+        },
+        {
+            "model": "Ensemble",
+            "repeat": 2.0
+        }
+    ],
+    "predictions_fname": "Ensemble_Stacked\\predictions_ensemble.csv",
+    "metric_name": "r2",
+    "final_loss": -0.3041181853123063,
+    "train_time": 106.55942630767822,
+    "is_stacked": true
+}

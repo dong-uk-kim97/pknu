@@ -1,0 +1,1388 @@
+{
+    "uid": "91d9443a-dc84-4ed0-90b7-9d556dadfead",
+    "name": "7_Xgboost_GoldenFeatures",
+    "preprocessing": [
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9178261726
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9242732106
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9259279579
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9277419808
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "AIR_TEMPERATURE",
+                        "operation": "ratio",
+                        "score": 0.930683849
+                    },
+                    {
+                        "feature1": "FLAG",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.931454275
+                    },
+                    {
+                        "feature1": "U_WIND",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9326947389
+                    },
+                    {
+                        "feature1": "DEADWEIGHT",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9329182771
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "FLAG",
+                        "operation": "ratio",
+                        "score": 0.9331767358
+                    },
+                    {
+                        "feature1": "LENGTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9334015592
+                    }
+                ],
+                "new_columns": [
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_ratio_PORT_SIZE",
+                    "AIR_TEMPERATURE_multiply_DIST",
+                    "AIR_TEMPERATURE_ratio_DIST",
+                    "DIST_ratio_AIR_TEMPERATURE",
+                    "FLAG_ratio_DIST",
+                    "U_WIND_multiply_DIST",
+                    "DEADWEIGHT_ratio_DIST",
+                    "DIST_ratio_FLAG",
+                    "LENGTH_multiply_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    179.33157273543358
+                ],
+                "mean": [
+                    66.71614284417907
+                ],
+                "var": [
+                    32159.8129797641
+                ],
+                "n_samples_seen": 195397,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_7",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9178261726
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9242732106
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9259279579
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9277419808
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "AIR_TEMPERATURE",
+                        "operation": "ratio",
+                        "score": 0.930683849
+                    },
+                    {
+                        "feature1": "FLAG",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.931454275
+                    },
+                    {
+                        "feature1": "U_WIND",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9326947389
+                    },
+                    {
+                        "feature1": "DEADWEIGHT",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9329182771
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "FLAG",
+                        "operation": "ratio",
+                        "score": 0.9331767358
+                    },
+                    {
+                        "feature1": "LENGTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9334015592
+                    }
+                ],
+                "new_columns": [
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_ratio_PORT_SIZE",
+                    "AIR_TEMPERATURE_multiply_DIST",
+                    "AIR_TEMPERATURE_ratio_DIST",
+                    "DIST_ratio_AIR_TEMPERATURE",
+                    "FLAG_ratio_DIST",
+                    "U_WIND_multiply_DIST",
+                    "DEADWEIGHT_ratio_DIST",
+                    "DIST_ratio_FLAG",
+                    "LENGTH_multiply_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    179.2995450728303
+                ],
+                "mean": [
+                    66.78958536974544
+                ],
+                "var": [
+                    32148.32686332391
+                ],
+                "n_samples_seen": 195397,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_7",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9178261726
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9242732106
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9259279579
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9277419808
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "AIR_TEMPERATURE",
+                        "operation": "ratio",
+                        "score": 0.930683849
+                    },
+                    {
+                        "feature1": "FLAG",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.931454275
+                    },
+                    {
+                        "feature1": "U_WIND",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9326947389
+                    },
+                    {
+                        "feature1": "DEADWEIGHT",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9329182771
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "FLAG",
+                        "operation": "ratio",
+                        "score": 0.9331767358
+                    },
+                    {
+                        "feature1": "LENGTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9334015592
+                    }
+                ],
+                "new_columns": [
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_ratio_PORT_SIZE",
+                    "AIR_TEMPERATURE_multiply_DIST",
+                    "AIR_TEMPERATURE_ratio_DIST",
+                    "DIST_ratio_AIR_TEMPERATURE",
+                    "FLAG_ratio_DIST",
+                    "U_WIND_multiply_DIST",
+                    "DEADWEIGHT_ratio_DIST",
+                    "DIST_ratio_FLAG",
+                    "LENGTH_multiply_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    178.5938348831323
+                ],
+                "mean": [
+                    66.55476648109996
+                ],
+                "var": [
+                    31895.757858263525
+                ],
+                "n_samples_seen": 195397,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_7",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9178261726
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9242732106
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9259279579
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9277419808
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "AIR_TEMPERATURE",
+                        "operation": "ratio",
+                        "score": 0.930683849
+                    },
+                    {
+                        "feature1": "FLAG",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.931454275
+                    },
+                    {
+                        "feature1": "U_WIND",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9326947389
+                    },
+                    {
+                        "feature1": "DEADWEIGHT",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9329182771
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "FLAG",
+                        "operation": "ratio",
+                        "score": 0.9331767358
+                    },
+                    {
+                        "feature1": "LENGTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9334015592
+                    }
+                ],
+                "new_columns": [
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_ratio_PORT_SIZE",
+                    "AIR_TEMPERATURE_multiply_DIST",
+                    "AIR_TEMPERATURE_ratio_DIST",
+                    "DIST_ratio_AIR_TEMPERATURE",
+                    "FLAG_ratio_DIST",
+                    "U_WIND_multiply_DIST",
+                    "DEADWEIGHT_ratio_DIST",
+                    "DIST_ratio_FLAG",
+                    "LENGTH_multiply_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    178.90679737500452
+                ],
+                "mean": [
+                    66.64762102424382
+                ],
+                "var": [
+                    32007.642146980925
+                ],
+                "n_samples_seen": 195397,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_7",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9178261726
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9242732106
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9259279579
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9277419808
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "AIR_TEMPERATURE",
+                        "operation": "ratio",
+                        "score": 0.930683849
+                    },
+                    {
+                        "feature1": "FLAG",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.931454275
+                    },
+                    {
+                        "feature1": "U_WIND",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9326947389
+                    },
+                    {
+                        "feature1": "DEADWEIGHT",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9329182771
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "FLAG",
+                        "operation": "ratio",
+                        "score": 0.9331767358
+                    },
+                    {
+                        "feature1": "LENGTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9334015592
+                    }
+                ],
+                "new_columns": [
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_ratio_PORT_SIZE",
+                    "AIR_TEMPERATURE_multiply_DIST",
+                    "AIR_TEMPERATURE_ratio_DIST",
+                    "DIST_ratio_AIR_TEMPERATURE",
+                    "FLAG_ratio_DIST",
+                    "U_WIND_multiply_DIST",
+                    "DEADWEIGHT_ratio_DIST",
+                    "DIST_ratio_FLAG",
+                    "LENGTH_multiply_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    178.9859931303617
+                ],
+                "mean": [
+                    66.74496546343306
+                ],
+                "var": [
+                    32035.98573686188
+                ],
+                "n_samples_seen": 195397,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_7",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9178261726
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9242732106
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9259279579
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9277419808
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "AIR_TEMPERATURE",
+                        "operation": "ratio",
+                        "score": 0.930683849
+                    },
+                    {
+                        "feature1": "FLAG",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.931454275
+                    },
+                    {
+                        "feature1": "U_WIND",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9326947389
+                    },
+                    {
+                        "feature1": "DEADWEIGHT",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9329182771
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "FLAG",
+                        "operation": "ratio",
+                        "score": 0.9331767358
+                    },
+                    {
+                        "feature1": "LENGTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9334015592
+                    }
+                ],
+                "new_columns": [
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_ratio_PORT_SIZE",
+                    "AIR_TEMPERATURE_multiply_DIST",
+                    "AIR_TEMPERATURE_ratio_DIST",
+                    "DIST_ratio_AIR_TEMPERATURE",
+                    "FLAG_ratio_DIST",
+                    "U_WIND_multiply_DIST",
+                    "DEADWEIGHT_ratio_DIST",
+                    "DIST_ratio_FLAG",
+                    "LENGTH_multiply_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    179.12165254643293
+                ],
+                "mean": [
+                    66.67222721770123
+                ],
+                "var": [
+                    32084.56641096504
+                ],
+                "n_samples_seen": 195397,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_7",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9178261726
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9242732106
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9259279579
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9277419808
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "AIR_TEMPERATURE",
+                        "operation": "ratio",
+                        "score": 0.930683849
+                    },
+                    {
+                        "feature1": "FLAG",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.931454275
+                    },
+                    {
+                        "feature1": "U_WIND",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9326947389
+                    },
+                    {
+                        "feature1": "DEADWEIGHT",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9329182771
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "FLAG",
+                        "operation": "ratio",
+                        "score": 0.9331767358
+                    },
+                    {
+                        "feature1": "LENGTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9334015592
+                    }
+                ],
+                "new_columns": [
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_ratio_PORT_SIZE",
+                    "AIR_TEMPERATURE_multiply_DIST",
+                    "AIR_TEMPERATURE_ratio_DIST",
+                    "DIST_ratio_AIR_TEMPERATURE",
+                    "FLAG_ratio_DIST",
+                    "U_WIND_multiply_DIST",
+                    "DEADWEIGHT_ratio_DIST",
+                    "DIST_ratio_FLAG",
+                    "LENGTH_multiply_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    178.72621579687737
+                ],
+                "mean": [
+                    66.71392486406197
+                ],
+                "var": [
+                    31943.060213071974
+                ],
+                "n_samples_seen": 195397,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_7",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9178261726
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9242732106
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9259279579
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9277419808
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "AIR_TEMPERATURE",
+                        "operation": "ratio",
+                        "score": 0.930683849
+                    },
+                    {
+                        "feature1": "FLAG",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.931454275
+                    },
+                    {
+                        "feature1": "U_WIND",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9326947389
+                    },
+                    {
+                        "feature1": "DEADWEIGHT",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9329182771
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "FLAG",
+                        "operation": "ratio",
+                        "score": 0.9331767358
+                    },
+                    {
+                        "feature1": "LENGTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9334015592
+                    }
+                ],
+                "new_columns": [
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_ratio_PORT_SIZE",
+                    "AIR_TEMPERATURE_multiply_DIST",
+                    "AIR_TEMPERATURE_ratio_DIST",
+                    "DIST_ratio_AIR_TEMPERATURE",
+                    "FLAG_ratio_DIST",
+                    "U_WIND_multiply_DIST",
+                    "DEADWEIGHT_ratio_DIST",
+                    "DIST_ratio_FLAG",
+                    "LENGTH_multiply_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    179.1928773007589
+                ],
+                "mean": [
+                    66.92187928221287
+                ],
+                "var": [
+                    32110.087275324833
+                ],
+                "n_samples_seen": 195397,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_7",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9178261726
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9242732106
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9259279579
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9277419808
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "AIR_TEMPERATURE",
+                        "operation": "ratio",
+                        "score": 0.930683849
+                    },
+                    {
+                        "feature1": "FLAG",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.931454275
+                    },
+                    {
+                        "feature1": "U_WIND",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9326947389
+                    },
+                    {
+                        "feature1": "DEADWEIGHT",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9329182771
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "FLAG",
+                        "operation": "ratio",
+                        "score": 0.9331767358
+                    },
+                    {
+                        "feature1": "LENGTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9334015592
+                    }
+                ],
+                "new_columns": [
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_ratio_PORT_SIZE",
+                    "AIR_TEMPERATURE_multiply_DIST",
+                    "AIR_TEMPERATURE_ratio_DIST",
+                    "DIST_ratio_AIR_TEMPERATURE",
+                    "FLAG_ratio_DIST",
+                    "U_WIND_multiply_DIST",
+                    "DEADWEIGHT_ratio_DIST",
+                    "DIST_ratio_FLAG",
+                    "LENGTH_multiply_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    179.39758740819272
+                ],
+                "mean": [
+                    66.8995398508148
+                ],
+                "var": [
+                    32183.49436788015
+                ],
+                "n_samples_seen": 195398,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_7",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9178261726
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9242732106
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9259279579
+                    },
+                    {
+                        "feature1": "AIR_TEMPERATURE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9277419808
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "AIR_TEMPERATURE",
+                        "operation": "ratio",
+                        "score": 0.930683849
+                    },
+                    {
+                        "feature1": "FLAG",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.931454275
+                    },
+                    {
+                        "feature1": "U_WIND",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9326947389
+                    },
+                    {
+                        "feature1": "DEADWEIGHT",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9329182771
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "FLAG",
+                        "operation": "ratio",
+                        "score": 0.9331767358
+                    },
+                    {
+                        "feature1": "LENGTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.9334015592
+                    }
+                ],
+                "new_columns": [
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_ratio_PORT_SIZE",
+                    "AIR_TEMPERATURE_multiply_DIST",
+                    "AIR_TEMPERATURE_ratio_DIST",
+                    "DIST_ratio_AIR_TEMPERATURE",
+                    "FLAG_ratio_DIST",
+                    "U_WIND_multiply_DIST",
+                    "DEADWEIGHT_ratio_DIST",
+                    "DIST_ratio_FLAG",
+                    "LENGTH_multiply_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    179.27981609560373
+                ],
+                "mean": [
+                    66.81216373186923
+                ],
+                "var": [
+                    32141.252459273495
+                ],
+                "n_samples_seen": 195398,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_7",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "2.0.3",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "c1b9c602-abf0-4386-90a0-372c13562532",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 45,
+                "objective": "reg:squarederror",
+                "eta": 0.05,
+                "max_depth": 9,
+                "min_child_weight": 10,
+                "subsample": 0.8,
+                "colsample_bytree": 0.6,
+                "eval_metric": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_0"
+        },
+        {
+            "library_version": "2.0.3",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "29f2abe0-0bcd-47c7-be74-802f80f3ab8f",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 45,
+                "objective": "reg:squarederror",
+                "eta": 0.05,
+                "max_depth": 9,
+                "min_child_weight": 10,
+                "subsample": 0.8,
+                "colsample_bytree": 0.6,
+                "eval_metric": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_1"
+        },
+        {
+            "library_version": "2.0.3",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "a0da174d-855b-4939-8ec6-d9f437242657",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 45,
+                "objective": "reg:squarederror",
+                "eta": 0.05,
+                "max_depth": 9,
+                "min_child_weight": 10,
+                "subsample": 0.8,
+                "colsample_bytree": 0.6,
+                "eval_metric": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_2"
+        },
+        {
+            "library_version": "2.0.3",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "c162554a-97db-463f-84bd-cc7a042c5899",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 45,
+                "objective": "reg:squarederror",
+                "eta": 0.05,
+                "max_depth": 9,
+                "min_child_weight": 10,
+                "subsample": 0.8,
+                "colsample_bytree": 0.6,
+                "eval_metric": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_3"
+        },
+        {
+            "library_version": "2.0.3",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "4cfbee10-327f-44ce-bfe1-f60277a08e90",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 45,
+                "objective": "reg:squarederror",
+                "eta": 0.05,
+                "max_depth": 9,
+                "min_child_weight": 10,
+                "subsample": 0.8,
+                "colsample_bytree": 0.6,
+                "eval_metric": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_4"
+        },
+        {
+            "library_version": "2.0.3",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "e255d5bf-5967-4d0a-9864-937fff82e8d7",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 45,
+                "objective": "reg:squarederror",
+                "eta": 0.05,
+                "max_depth": 9,
+                "min_child_weight": 10,
+                "subsample": 0.8,
+                "colsample_bytree": 0.6,
+                "eval_metric": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_5"
+        },
+        {
+            "library_version": "2.0.3",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "b80d394d-1c36-428a-b4d5-ed15c92e97d0",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 45,
+                "objective": "reg:squarederror",
+                "eta": 0.05,
+                "max_depth": 9,
+                "min_child_weight": 10,
+                "subsample": 0.8,
+                "colsample_bytree": 0.6,
+                "eval_metric": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_6"
+        },
+        {
+            "library_version": "2.0.3",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "98052eed-5bc7-4b13-b417-bf148287f66b",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 45,
+                "objective": "reg:squarederror",
+                "eta": 0.05,
+                "max_depth": 9,
+                "min_child_weight": 10,
+                "subsample": 0.8,
+                "colsample_bytree": 0.6,
+                "eval_metric": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_7"
+        },
+        {
+            "library_version": "2.0.3",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "2c7afd6d-17a2-47c4-bc6b-76ab614e65cc",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 45,
+                "objective": "reg:squarederror",
+                "eta": 0.05,
+                "max_depth": 9,
+                "min_child_weight": 10,
+                "subsample": 0.8,
+                "colsample_bytree": 0.6,
+                "eval_metric": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_8"
+        },
+        {
+            "library_version": "2.0.3",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "4217d1d5-0d0b-4f7b-8357-a9366b646d5e",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 45,
+                "objective": "reg:squarederror",
+                "eta": 0.05,
+                "max_depth": 9,
+                "min_child_weight": 10,
+                "subsample": 0.8,
+                "colsample_bytree": 0.6,
+                "eval_metric": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_9"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {},
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_normal"
+            ],
+            "ml_task": "regression",
+            "golden_features": {
+                "results_path": "AutoML_7",
+                "ml_task": "regression",
+                "n_jobs": -1
+            }
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 10,
+            "shuffle": true,
+            "X_path": "AutoML_7\\X.data",
+            "y_path": "AutoML_7\\y.data",
+            "results_path": "AutoML_7"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 45,
+            "objective": "reg:squarederror",
+            "eta": 0.05,
+            "max_depth": 9,
+            "min_child_weight": 10,
+            "subsample": 0.8,
+            "colsample_bytree": 0.6,
+            "eval_metric": "r2",
+            "explain_level": 0
+        },
+        "automl_random_state": 42,
+        "ml_task": "regression",
+        "explain_level": 0,
+        "name": "7_Xgboost_GoldenFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_golden_features",
+        "max_time_for_learner": 3600
+    },
+    "saved": [
+        "7_Xgboost_GoldenFeatures\\learner_fold_0.xgboost.json",
+        "7_Xgboost_GoldenFeatures\\learner_fold_1.xgboost.json",
+        "7_Xgboost_GoldenFeatures\\learner_fold_2.xgboost.json",
+        "7_Xgboost_GoldenFeatures\\learner_fold_3.xgboost.json",
+        "7_Xgboost_GoldenFeatures\\learner_fold_4.xgboost.json",
+        "7_Xgboost_GoldenFeatures\\learner_fold_5.xgboost.json",
+        "7_Xgboost_GoldenFeatures\\learner_fold_6.xgboost.json",
+        "7_Xgboost_GoldenFeatures\\learner_fold_7.xgboost.json",
+        "7_Xgboost_GoldenFeatures\\learner_fold_8.xgboost.json",
+        "7_Xgboost_GoldenFeatures\\learner_fold_9.xgboost.json"
+    ],
+    "predictions_fname": "7_Xgboost_GoldenFeatures\\predictions_out_of_folds.csv",
+    "metric_name": "r2",
+    "final_loss": "-0.2891396603536005",
+    "train_time": 78.33803057670593,
+    "is_stacked": false,
+    "joblib_version": "1.3.2"
+}
