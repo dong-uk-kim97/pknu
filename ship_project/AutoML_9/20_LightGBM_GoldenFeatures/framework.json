@@ -1,0 +1,1473 @@
+{
+    "uid": "f2c140a3-0946-4f5f-ba81-f116162ddc49",
+    "name": "20_LightGBM_GoldenFeatures",
+    "preprocessing": [
+        {
+            "remove_columns": [
+                "DRAUGHT"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "SHIP_TYPE_CATEGORY",
+                        "feature2": "DIST",
+                        "operation": "diff",
+                        "score": 0.6311924107
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "diff",
+                        "score": 0.6531373294
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.6753886137
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.6755883113
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.6940327725
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "sum",
+                        "score": 0.7170609275
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "BREADTH",
+                        "operation": "diff",
+                        "score": 0.7179869871
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.7194232165
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "ratio",
+                        "score": 0.7266125381
+                    },
+                    {
+                        "feature1": "weekday",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.7363532019
+                    }
+                ],
+                "new_columns": [
+                    "SHIP_TYPE_CATEGORY_diff_DIST",
+                    "DIST_diff_DEPTH",
+                    "DEPTH_ratio_DIST",
+                    "DEPTH_sum_DIST",
+                    "DEPTH_multiply_DIST",
+                    "DIST_sum_SHIP_TYPE_CATEGORY",
+                    "DIST_diff_BREADTH",
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_SHIP_TYPE_CATEGORY",
+                    "weekday_sum_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    43.57712688558067
+                ],
+                "mean": [
+                    31.58899113910077
+                ],
+                "var": [
+                    1898.9659876019975
+                ],
+                "n_samples_seen": 352739,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "DRAUGHT": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_9",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "DRAUGHT"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "SHIP_TYPE_CATEGORY",
+                        "feature2": "DIST",
+                        "operation": "diff",
+                        "score": 0.6311924107
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "diff",
+                        "score": 0.6531373294
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.6753886137
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.6755883113
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.6940327725
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "sum",
+                        "score": 0.7170609275
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "BREADTH",
+                        "operation": "diff",
+                        "score": 0.7179869871
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.7194232165
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "ratio",
+                        "score": 0.7266125381
+                    },
+                    {
+                        "feature1": "weekday",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.7363532019
+                    }
+                ],
+                "new_columns": [
+                    "SHIP_TYPE_CATEGORY_diff_DIST",
+                    "DIST_diff_DEPTH",
+                    "DEPTH_ratio_DIST",
+                    "DEPTH_sum_DIST",
+                    "DEPTH_multiply_DIST",
+                    "DIST_sum_SHIP_TYPE_CATEGORY",
+                    "DIST_diff_BREADTH",
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_SHIP_TYPE_CATEGORY",
+                    "weekday_sum_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    43.58268362903424
+                ],
+                "mean": [
+                    31.619560771403332
+                ],
+                "var": [
+                    1899.4503123084892
+                ],
+                "n_samples_seen": 352739,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "DRAUGHT": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_9",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "DRAUGHT"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "SHIP_TYPE_CATEGORY",
+                        "feature2": "DIST",
+                        "operation": "diff",
+                        "score": 0.6311924107
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "diff",
+                        "score": 0.6531373294
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.6753886137
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.6755883113
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.6940327725
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "sum",
+                        "score": 0.7170609275
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "BREADTH",
+                        "operation": "diff",
+                        "score": 0.7179869871
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.7194232165
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "ratio",
+                        "score": 0.7266125381
+                    },
+                    {
+                        "feature1": "weekday",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.7363532019
+                    }
+                ],
+                "new_columns": [
+                    "SHIP_TYPE_CATEGORY_diff_DIST",
+                    "DIST_diff_DEPTH",
+                    "DEPTH_ratio_DIST",
+                    "DEPTH_sum_DIST",
+                    "DEPTH_multiply_DIST",
+                    "DIST_sum_SHIP_TYPE_CATEGORY",
+                    "DIST_diff_BREADTH",
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_SHIP_TYPE_CATEGORY",
+                    "weekday_sum_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    43.56257027606717
+                ],
+                "mean": [
+                    31.59122927488401
+                ],
+                "var": [
+                    1897.697529057291
+                ],
+                "n_samples_seen": 352739,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "DRAUGHT": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_9",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "DRAUGHT"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "SHIP_TYPE_CATEGORY",
+                        "feature2": "DIST",
+                        "operation": "diff",
+                        "score": 0.6311924107
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "diff",
+                        "score": 0.6531373294
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.6753886137
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.6755883113
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.6940327725
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "sum",
+                        "score": 0.7170609275
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "BREADTH",
+                        "operation": "diff",
+                        "score": 0.7179869871
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.7194232165
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "ratio",
+                        "score": 0.7266125381
+                    },
+                    {
+                        "feature1": "weekday",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.7363532019
+                    }
+                ],
+                "new_columns": [
+                    "SHIP_TYPE_CATEGORY_diff_DIST",
+                    "DIST_diff_DEPTH",
+                    "DEPTH_ratio_DIST",
+                    "DEPTH_sum_DIST",
+                    "DEPTH_multiply_DIST",
+                    "DIST_sum_SHIP_TYPE_CATEGORY",
+                    "DIST_diff_BREADTH",
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_SHIP_TYPE_CATEGORY",
+                    "weekday_sum_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    43.57784059783033
+                ],
+                "mean": [
+                    31.58946639718549
+                ],
+                "var": [
+                    1899.0281911699096
+                ],
+                "n_samples_seen": 352740,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "DRAUGHT": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_9",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "DRAUGHT"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "SHIP_TYPE_CATEGORY",
+                        "feature2": "DIST",
+                        "operation": "diff",
+                        "score": 0.6311924107
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "diff",
+                        "score": 0.6531373294
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.6753886137
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.6755883113
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.6940327725
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "sum",
+                        "score": 0.7170609275
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "BREADTH",
+                        "operation": "diff",
+                        "score": 0.7179869871
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.7194232165
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "ratio",
+                        "score": 0.7266125381
+                    },
+                    {
+                        "feature1": "weekday",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.7363532019
+                    }
+                ],
+                "new_columns": [
+                    "SHIP_TYPE_CATEGORY_diff_DIST",
+                    "DIST_diff_DEPTH",
+                    "DEPTH_ratio_DIST",
+                    "DEPTH_sum_DIST",
+                    "DEPTH_multiply_DIST",
+                    "DIST_sum_SHIP_TYPE_CATEGORY",
+                    "DIST_diff_BREADTH",
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_SHIP_TYPE_CATEGORY",
+                    "weekday_sum_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    43.569521637647824
+                ],
+                "mean": [
+                    31.572937143263072
+                ],
+                "var": [
+                    1898.3032157334617
+                ],
+                "n_samples_seen": 352740,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "DRAUGHT": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_9",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "DRAUGHT"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "SHIP_TYPE_CATEGORY",
+                        "feature2": "DIST",
+                        "operation": "diff",
+                        "score": 0.6311924107
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "diff",
+                        "score": 0.6531373294
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.6753886137
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.6755883113
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.6940327725
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "sum",
+                        "score": 0.7170609275
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "BREADTH",
+                        "operation": "diff",
+                        "score": 0.7179869871
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.7194232165
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "ratio",
+                        "score": 0.7266125381
+                    },
+                    {
+                        "feature1": "weekday",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.7363532019
+                    }
+                ],
+                "new_columns": [
+                    "SHIP_TYPE_CATEGORY_diff_DIST",
+                    "DIST_diff_DEPTH",
+                    "DEPTH_ratio_DIST",
+                    "DEPTH_sum_DIST",
+                    "DEPTH_multiply_DIST",
+                    "DIST_sum_SHIP_TYPE_CATEGORY",
+                    "DIST_diff_BREADTH",
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_SHIP_TYPE_CATEGORY",
+                    "weekday_sum_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    43.55538305981755
+                ],
+                "mean": [
+                    31.57482625461623
+                ],
+                "var": [
+                    1897.0713934874416
+                ],
+                "n_samples_seen": 352740,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "DRAUGHT": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_9",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "DRAUGHT"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "SHIP_TYPE_CATEGORY",
+                        "feature2": "DIST",
+                        "operation": "diff",
+                        "score": 0.6311924107
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "diff",
+                        "score": 0.6531373294
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.6753886137
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.6755883113
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.6940327725
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "sum",
+                        "score": 0.7170609275
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "BREADTH",
+                        "operation": "diff",
+                        "score": 0.7179869871
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.7194232165
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "ratio",
+                        "score": 0.7266125381
+                    },
+                    {
+                        "feature1": "weekday",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.7363532019
+                    }
+                ],
+                "new_columns": [
+                    "SHIP_TYPE_CATEGORY_diff_DIST",
+                    "DIST_diff_DEPTH",
+                    "DEPTH_ratio_DIST",
+                    "DEPTH_sum_DIST",
+                    "DEPTH_multiply_DIST",
+                    "DIST_sum_SHIP_TYPE_CATEGORY",
+                    "DIST_diff_BREADTH",
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_SHIP_TYPE_CATEGORY",
+                    "weekday_sum_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    43.562675016804064
+                ],
+                "mean": [
+                    31.558908574460435
+                ],
+                "var": [
+                    1897.7066546196852
+                ],
+                "n_samples_seen": 352740,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "DRAUGHT": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_9",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "DRAUGHT"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "SHIP_TYPE_CATEGORY",
+                        "feature2": "DIST",
+                        "operation": "diff",
+                        "score": 0.6311924107
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "diff",
+                        "score": 0.6531373294
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.6753886137
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.6755883113
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.6940327725
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "sum",
+                        "score": 0.7170609275
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "BREADTH",
+                        "operation": "diff",
+                        "score": 0.7179869871
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.7194232165
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "ratio",
+                        "score": 0.7266125381
+                    },
+                    {
+                        "feature1": "weekday",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.7363532019
+                    }
+                ],
+                "new_columns": [
+                    "SHIP_TYPE_CATEGORY_diff_DIST",
+                    "DIST_diff_DEPTH",
+                    "DEPTH_ratio_DIST",
+                    "DEPTH_sum_DIST",
+                    "DEPTH_multiply_DIST",
+                    "DIST_sum_SHIP_TYPE_CATEGORY",
+                    "DIST_diff_BREADTH",
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_SHIP_TYPE_CATEGORY",
+                    "weekday_sum_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    43.57493272214007
+                ],
+                "mean": [
+                    31.59304511545984
+                ],
+                "var": [
+                    1898.7747617390335
+                ],
+                "n_samples_seen": 352740,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "DRAUGHT": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_9",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "DRAUGHT"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "SHIP_TYPE_CATEGORY",
+                        "feature2": "DIST",
+                        "operation": "diff",
+                        "score": 0.6311924107
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "diff",
+                        "score": 0.6531373294
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.6753886137
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.6755883113
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.6940327725
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "sum",
+                        "score": 0.7170609275
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "BREADTH",
+                        "operation": "diff",
+                        "score": 0.7179869871
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.7194232165
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "ratio",
+                        "score": 0.7266125381
+                    },
+                    {
+                        "feature1": "weekday",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.7363532019
+                    }
+                ],
+                "new_columns": [
+                    "SHIP_TYPE_CATEGORY_diff_DIST",
+                    "DIST_diff_DEPTH",
+                    "DEPTH_ratio_DIST",
+                    "DEPTH_sum_DIST",
+                    "DEPTH_multiply_DIST",
+                    "DIST_sum_SHIP_TYPE_CATEGORY",
+                    "DIST_diff_BREADTH",
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_SHIP_TYPE_CATEGORY",
+                    "weekday_sum_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    43.577450429246134
+                ],
+                "mean": [
+                    31.588144072903297
+                ],
+                "var": [
+                    1898.9941859134044
+                ],
+                "n_samples_seen": 352740,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "DRAUGHT": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_9",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "DRAUGHT"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "SHIP_TYPE_CATEGORY",
+                        "feature2": "DIST",
+                        "operation": "diff",
+                        "score": 0.6311924107
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "diff",
+                        "score": 0.6531373294
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.6753886137
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.6755883113
+                    },
+                    {
+                        "feature1": "DEPTH",
+                        "feature2": "DIST",
+                        "operation": "multiply",
+                        "score": 0.6940327725
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "sum",
+                        "score": 0.7170609275
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "BREADTH",
+                        "operation": "diff",
+                        "score": 0.7179869871
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.7194232165
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "SHIP_TYPE_CATEGORY",
+                        "operation": "ratio",
+                        "score": 0.7266125381
+                    },
+                    {
+                        "feature1": "weekday",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.7363532019
+                    }
+                ],
+                "new_columns": [
+                    "SHIP_TYPE_CATEGORY_diff_DIST",
+                    "DIST_diff_DEPTH",
+                    "DEPTH_ratio_DIST",
+                    "DEPTH_sum_DIST",
+                    "DEPTH_multiply_DIST",
+                    "DIST_sum_SHIP_TYPE_CATEGORY",
+                    "DIST_diff_BREADTH",
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_SHIP_TYPE_CATEGORY",
+                    "weekday_sum_DIST"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    43.578650034055144
+                ],
+                "mean": [
+                    31.600049084776554
+                ],
+                "var": [
+                    1899.0987387906541
+                ],
+                "n_samples_seen": 352740,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "DRAUGHT": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_9",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "4.1.0",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "a2246088-1278-4f4c-918e-2bbb3e0a4977",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "objective": "regression",
+                "num_leaves": 127,
+                "learning_rate": 0.1,
+                "feature_fraction": 1.0,
+                "bagging_fraction": 1.0,
+                "min_data_in_leaf": 50,
+                "metric": "custom",
+                "custom_eval_metric_name": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_0"
+        },
+        {
+            "library_version": "4.1.0",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "e8a1b79a-cb3a-440f-93fc-2343227f03af",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "objective": "regression",
+                "num_leaves": 127,
+                "learning_rate": 0.1,
+                "feature_fraction": 1.0,
+                "bagging_fraction": 1.0,
+                "min_data_in_leaf": 50,
+                "metric": "custom",
+                "custom_eval_metric_name": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_1"
+        },
+        {
+            "library_version": "4.1.0",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "5ec5ba7b-95f8-471e-9d22-fe37d346f4fd",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "objective": "regression",
+                "num_leaves": 127,
+                "learning_rate": 0.1,
+                "feature_fraction": 1.0,
+                "bagging_fraction": 1.0,
+                "min_data_in_leaf": 50,
+                "metric": "custom",
+                "custom_eval_metric_name": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_2"
+        },
+        {
+            "library_version": "4.1.0",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "09f83d91-7751-40a8-a714-317355eca0ca",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "objective": "regression",
+                "num_leaves": 127,
+                "learning_rate": 0.1,
+                "feature_fraction": 1.0,
+                "bagging_fraction": 1.0,
+                "min_data_in_leaf": 50,
+                "metric": "custom",
+                "custom_eval_metric_name": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_3"
+        },
+        {
+            "library_version": "4.1.0",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "d2212148-1099-45c3-965a-894eaa92994d",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "objective": "regression",
+                "num_leaves": 127,
+                "learning_rate": 0.1,
+                "feature_fraction": 1.0,
+                "bagging_fraction": 1.0,
+                "min_data_in_leaf": 50,
+                "metric": "custom",
+                "custom_eval_metric_name": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_4"
+        },
+        {
+            "library_version": "4.1.0",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "50d5de73-86cd-4455-8ab2-7411320431f6",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "objective": "regression",
+                "num_leaves": 127,
+                "learning_rate": 0.1,
+                "feature_fraction": 1.0,
+                "bagging_fraction": 1.0,
+                "min_data_in_leaf": 50,
+                "metric": "custom",
+                "custom_eval_metric_name": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_5"
+        },
+        {
+            "library_version": "4.1.0",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "238f576b-375c-4aed-9ad6-9028b036905d",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "objective": "regression",
+                "num_leaves": 127,
+                "learning_rate": 0.1,
+                "feature_fraction": 1.0,
+                "bagging_fraction": 1.0,
+                "min_data_in_leaf": 50,
+                "metric": "custom",
+                "custom_eval_metric_name": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_6"
+        },
+        {
+            "library_version": "4.1.0",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "5dcdbaf8-abba-4a9e-b9c5-ea94d332130f",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "objective": "regression",
+                "num_leaves": 127,
+                "learning_rate": 0.1,
+                "feature_fraction": 1.0,
+                "bagging_fraction": 1.0,
+                "min_data_in_leaf": 50,
+                "metric": "custom",
+                "custom_eval_metric_name": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_7"
+        },
+        {
+            "library_version": "4.1.0",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "50725f8c-675d-44f2-bd21-47ab76442f9e",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "objective": "regression",
+                "num_leaves": 127,
+                "learning_rate": 0.1,
+                "feature_fraction": 1.0,
+                "bagging_fraction": 1.0,
+                "min_data_in_leaf": 50,
+                "metric": "custom",
+                "custom_eval_metric_name": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_8"
+        },
+        {
+            "library_version": "4.1.0",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "3081fa36-5758-4ea5-9df5-313498af9eeb",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "objective": "regression",
+                "num_leaves": 127,
+                "learning_rate": 0.1,
+                "feature_fraction": 1.0,
+                "bagging_fraction": 1.0,
+                "min_data_in_leaf": 50,
+                "metric": "custom",
+                "custom_eval_metric_name": "r2",
+                "explain_level": 0
+            },
+            "name": "learner_fold_9"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "DRAUGHT": [
+                    "remove_column"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_normal"
+            ],
+            "ml_task": "regression",
+            "golden_features": {
+                "results_path": "AutoML_9",
+                "ml_task": "regression",
+                "n_jobs": -1
+            }
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 10,
+            "shuffle": true,
+            "X_path": "AutoML_9\\X.data",
+            "y_path": "AutoML_9\\y.data",
+            "results_path": "AutoML_9"
+        },
+        "learner": {
+            "model_type": "LightGBM",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 49,
+            "objective": "regression",
+            "num_leaves": 127,
+            "learning_rate": 0.1,
+            "feature_fraction": 1.0,
+            "bagging_fraction": 1.0,
+            "min_data_in_leaf": 50,
+            "metric": "custom",
+            "custom_eval_metric_name": "r2",
+            "explain_level": 0
+        },
+        "automl_random_state": 42,
+        "ml_task": "regression",
+        "explain_level": 0,
+        "name": "20_LightGBM_GoldenFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_golden_features",
+        "max_time_for_learner": 3600
+    },
+    "saved": [
+        "20_LightGBM_GoldenFeatures\\learner_fold_0.lightgbm",
+        "20_LightGBM_GoldenFeatures\\learner_fold_1.lightgbm",
+        "20_LightGBM_GoldenFeatures\\learner_fold_2.lightgbm",
+        "20_LightGBM_GoldenFeatures\\learner_fold_3.lightgbm",
+        "20_LightGBM_GoldenFeatures\\learner_fold_4.lightgbm",
+        "20_LightGBM_GoldenFeatures\\learner_fold_5.lightgbm",
+        "20_LightGBM_GoldenFeatures\\learner_fold_6.lightgbm",
+        "20_LightGBM_GoldenFeatures\\learner_fold_7.lightgbm",
+        "20_LightGBM_GoldenFeatures\\learner_fold_8.lightgbm",
+        "20_LightGBM_GoldenFeatures\\learner_fold_9.lightgbm"
+    ],
+    "predictions_fname": "20_LightGBM_GoldenFeatures\\predictions_out_of_folds.csv",
+    "metric_name": "r2",
+    "final_loss": "-0.5906490766239485",
+    "train_time": 113.57969951629639,
+    "is_stacked": false,
+    "joblib_version": "1.3.2"
+}

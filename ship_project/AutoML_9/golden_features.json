@@ -1,0 +1,77 @@
+{
+    "new_features": [
+        {
+            "feature1": "SHIP_TYPE_CATEGORY",
+            "feature2": "DIST",
+            "operation": "diff",
+            "score": 0.6311924107
+        },
+        {
+            "feature1": "DIST",
+            "feature2": "DEPTH",
+            "operation": "diff",
+            "score": 0.6531373294
+        },
+        {
+            "feature1": "DEPTH",
+            "feature2": "DIST",
+            "operation": "ratio",
+            "score": 0.6753886137
+        },
+        {
+            "feature1": "DEPTH",
+            "feature2": "DIST",
+            "operation": "sum",
+            "score": 0.6755883113
+        },
+        {
+            "feature1": "DEPTH",
+            "feature2": "DIST",
+            "operation": "multiply",
+            "score": 0.6940327725
+        },
+        {
+            "feature1": "DIST",
+            "feature2": "SHIP_TYPE_CATEGORY",
+            "operation": "sum",
+            "score": 0.7170609275
+        },
+        {
+            "feature1": "DIST",
+            "feature2": "BREADTH",
+            "operation": "diff",
+            "score": 0.7179869871
+        },
+        {
+            "feature1": "DIST",
+            "feature2": "PORT_SIZE",
+            "operation": "diff",
+            "score": 0.7194232165
+        },
+        {
+            "feature1": "DIST",
+            "feature2": "SHIP_TYPE_CATEGORY",
+            "operation": "ratio",
+            "score": 0.7266125381
+        },
+        {
+            "feature1": "weekday",
+            "feature2": "DIST",
+            "operation": "sum",
+            "score": 0.7363532019
+        }
+    ],
+    "new_columns": [
+        "SHIP_TYPE_CATEGORY_diff_DIST",
+        "DIST_diff_DEPTH",
+        "DEPTH_ratio_DIST",
+        "DEPTH_sum_DIST",
+        "DEPTH_multiply_DIST",
+        "DIST_sum_SHIP_TYPE_CATEGORY",
+        "DIST_diff_BREADTH",
+        "DIST_diff_PORT_SIZE",
+        "DIST_ratio_SHIP_TYPE_CATEGORY",
+        "weekday_sum_DIST"
+    ],
+    "ml_task": "regression"
+}
