@@ -10,6 +10,9 @@ HD 현대 AI Challenge
 
 https://dacon.io/competitions/official/236158/overview/description
 
+# 프로젝트 기간
+2024년 4월 1일~ 4월 8일까지
+
 # 데이터 분석
 ![히트맵](heatmap.png)
 
