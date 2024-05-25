@@ -2,6 +2,7 @@ import os
 import socket
 import subprocess
 from ftplib import FTP
+from multiprocessing import Process
 from PyQt5.QtWidgets import QApplication, QDialog, QFileDialog, QVBoxLayout, QPushButton, QComboBox, QLabel
 from PyQt5.QtCore import QThread, pyqtSignal
 
@@ -17,20 +18,22 @@ class FTPSender(QDialog):
 
         layout = QVBoxLayout()
 
-        self.select_button = QPushButton("Select Folder")
+        self.select_button = QPushButton("폴더 선택")
         self.select_button.clicked.connect(self.select_folder)
         layout.addWidget(self.select_button)
 
         self.folder_combobox = QComboBox()
-        layout.addWidget(QLabel("Choose yolov5 folder:"))
+        layout.addWidget(QLabel("yolov5 폴더 선택:"))
         layout.addWidget(self.folder_combobox)
 
-        self.send_button = QPushButton("Send")
+        self.send_button = QPushButton("보내기")
         self.send_button.clicked.connect(self.send_folder)
+        self.send_button.setEnabled(False)
         layout.addWidget(self.send_button)
 
-        self.run_detect_button = QPushButton("Run detect.py")
+        self.run_detect_button = QPushButton("detect.py 실행")
         self.run_detect_button.clicked.connect(self.run_detect)
+        self.run_detect_button.setEnabled(False)
         layout.addWidget(self.run_detect_button)
 
         self.setLayout(layout)
@@ -42,7 +45,7 @@ class FTPSender(QDialog):
         self.folder_combobox.addItems(folders)
 
     def select_folder(self):
-        folder_path = QFileDialog.getExistingDirectory(self, "Select Folder")
+        folder_path = QFileDialog.getExistingDirectory(self, "폴더 선택")
         if folder_path:
             self.folder_path = folder_path
             self.send_button.setEnabled(True)
@@ -51,13 +54,14 @@ class FTPSender(QDialog):
 
     def send_folder(self):
         try:
-            self.ftp.connect("your_ftp_host", "your_ftp_port")
-            self.ftp.login("your_ftp_username", "your_ftp_password")
+            self.ftp.connect("FTP 호스트", "FTP 포트")
+            self.ftp.login("FTP 사용자명", "FTP 비밀번호")
             self.ftp.cwd("/")  # 서버의 루트 디렉토리로 이동
             self.send_files_in_folder(self.folder_path)
             self.ftp.quit()
         except Exception as e:
-            print(f"Error: {e}")
+            print(f"오류: {e}")
+            self.send_button.setEnabled(False)
 
     def send_files_in_folder(self, folder_path):
         for root, dirs, files in os.walk(folder_path):
@@ -65,55 +69,39 @@ class FTPSender(QDialog):
             for file in files:
                 file_path = os.path.join(root, file)
                 self.ftp.storbinary(f"STOR {file}", open(file_path, "rb"), 1024)
-                print(f"{file} sent successfully")
             for dir in dirs:
-                self.ftp.mkd(dir)  # 서버에 디렉토리 생성
+                try:
+                    self.ftp.mkd(dir)  # 서버에 디렉토리 생성
+                except:
+                    pass
                 self.send_files_in_folder(os.path.join(root, dir))
             self.ftp.cwd("..")  # 상위 디렉토리로 이동
 
     def run_detect(self):
-        self.detect_thread = DetectThread(self.folder_path)
-        self.detect_thread.start()
-
-
-class SendSelectedFolderThread(QThread):
-    def __init__(self, selected_folder_signal):
-        super().__init__()
-        self.selected_folder_signal = selected_folder_signal
-        self.selected_folder_signal.connect(self.send_selected_folder)
-
-    def send_selected_folder(self, folder_path):
-        try:
-            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            sock.connect(("localhost", 12345))
-            sock.sendall(folder_path.encode())
-            sock.close()
-        except Exception as e:
-            print(f"Error: {e}")
+        for i in range(1, 6):
+            detect_thread = DetectThread(f"rtsp://192.168.0.10{i}:554/stream")
+            detect_thread.start()
 
 
 class DetectThread(QThread):
     progress_signal = pyqtSignal(str)
 
-    def __init__(self, folder_path):
+    def __init__(self, cam_url):
         super().__init__()
-        self.folder_path = folder_path
+        self.cam_url = cam_url
 
     def run(self):
         try:
-            subprocess.run(["python", "detect.py","--source", self.folder_path, "--weights", "yolov5s.pt"], capture_output=True, text=True)
+            subprocess.run(["python", "detect.py", "--source", self.cam_url, "--weights", "yolov5s.pt"], capture_output=True, text=True)
             progress_str = self.detect_thread.stdout.read().strip()
             self.progress_signal.emit(progress_str)
         except Exception as e:
-            print(f"Error: {e}")
+            print(f"오류: {e}")
 
 
 if __name__ == "__main__":
     app = QApplication([])
     window = FTPSender()
-    selected_folder_thread = SendSelectedFolderThread(window.selected_folder_signal)
-    selected_folder_thread.start()
     window.show()
     app.exec_()
-
 
